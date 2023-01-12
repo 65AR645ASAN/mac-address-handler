@@ -11,7 +11,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 payload = ''
 headers = {}
 mac_address = sys.argv[1]
-apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW' # retrieve the API key from the manlookup website provided for email adi.sandhu@outlook.com
+apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW' # retrieve the API key from the maclookup website provided for email adi.sandhu@outlook.com
 
 
 class macapi():
