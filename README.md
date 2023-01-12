@@ -8,7 +8,7 @@
         - python3 main.py [macaddress]
         > python3 main.py 44:38:39:ff:ef:57
         
-    - It can be run via a DockerFile with the following commands afrter docker desktop is available on your computer 
+    - It can be run via a DockerFile with the following commands after docker desktop is available on your computer 
         > docker run -d -p 80:80 docker/getting-started
         - Next create a docker image with the Dockerfile
             - docker build -t [image-name] .
