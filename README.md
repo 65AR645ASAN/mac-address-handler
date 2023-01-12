@@ -13,4 +13,4 @@
             - docker build -t [image-name] .
             > docker build -t mainimage .
             > docker run mainimage
-SECURITY - can be added to making the api key a parameter that is passed to the script along with the mac address, the class and function is written to add this as a security parameter
+- SECURITY - can be added to making the api key a parameter that is passed to the script along with the mac address, the class and function is written to add this as a security parameter
