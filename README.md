@@ -16,4 +16,4 @@
             - Running the mainimage runs the cmds in the dockerfile exectuing the main.py program that logs the company name requested from the output
             > docker run mainimage 
 - SECURITY - Can be added to making the api key a parameter that is passed to the program along with the mac address, [currently its hardcoded] the class and function is written to add this as a security parameter
-    - Additional security parameters can include an .env file that houses api key information and other sensitive security parameters of the program
+    - An Additional implementation is a .env file that houses sensitive security parameters like api key information etc
