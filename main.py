@@ -26,7 +26,7 @@ class macapi():
         res = conn.getresponse()
         data = res.read()
         dict_resp = json.loads(data.decode("utf-8"))
-        return logging.critical(f"companyName >>> {dict_resp['vendorDetails']['companyName']}")
+        return logging.critical(f"CompanyName -> {dict_resp['vendorDetails']['companyName']}")
 
 # instantiate class and func to return company name
 macapi_class = macapi(mac_address, apiKey)
