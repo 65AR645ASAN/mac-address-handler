@@ -1,4 +1,4 @@
-
+import json
 import sys
 import ssl
 import http.client
@@ -7,11 +7,11 @@ import logging
 # supress ssl errors
 ssl._create_default_https_context = ssl._create_unverified_context
 
-logging.critical(("file_arguments_list: ", sys.argv))
+# logging.critical(("file_arguments_list: ", sys.argv))
 payload = ''
 headers = {}
 mac_address = sys.argv[1]
-apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW'
+apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW' # retrieve the API key from the manlookup website provided for email adi.sandhu@outlook.com
 
 
 class macapi():
@@ -25,7 +25,9 @@ class macapi():
         conn.request("GET", f"/v1?apiKey={apiKey}&output=json&search=" + mac_address, payload, headers)
         res = conn.getresponse()
         data = res.read()
-        return logging.critical(data.decode("utf-8"))
+        dict_resp = json.loads(data.decode("utf-8"))
+        return logging.critical(f"companyName >>> {dict_resp['vendorDetails']['companyName']}")
 
+# instantiate class and func to return company name
 macapi_class = macapi(mac_address, apiKey)
 instantiate_func = macapi_class.macaddress_api(mac_address, apiKey)
