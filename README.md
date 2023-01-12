@@ -10,9 +10,9 @@
         
     - It can be run via a DockerFile with the following commands afrter docker desktop is available on your computer 
         > docker run -d -p 80:80 docker/getting-started
-    - Next create a docker image with the Dockerfile
-           - docker build -t [image-name] .
-           > docker build -t mainimage .
-           - running hte mainimage runs the cmds in the dockerfile exectuing the main.py script that logs the company name requested from the output
-           > docker run mainimage 
+        - Next create a docker image with the Dockerfile
+            - docker build -t [image-name] .
+            > docker build -t mainimage .
+            - running hte mainimage runs the cmds in the dockerfile exectuing the main.py script that logs the company name requested from the output
+            > docker run mainimage 
 - SECURITY - can be added to making the api key a parameter that is passed to the script along with the mac address, the class and function is written to add this as a security parameter
