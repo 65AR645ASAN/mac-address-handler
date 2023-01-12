@@ -21,9 +21,9 @@ class macapi():
         self.apiKey = apiKey
 
     def macaddress_api(self, mac_address, apiKey):
-        conn = http.client.HTTPSConnection("api.macaddress.io")
-        conn.request("GET", f"/v1?apiKey={apiKey}&output=json&search=" + mac_address, payload, headers)
-        res = conn.getresponse()
+        baseurl = http.client.HTTPSConnection("api.macaddress.io")
+        baseurl.request("GET", f"/v1?apiKey={apiKey}&output=json&search=" + mac_address, payload, headers)
+        res = baseurl.getresponse()
         data = res.read()
         dict_resp = json.loads(data.decode("utf-8"))
         return logging.critical(f"CompanyName -> {dict_resp['vendorDetails']['companyName']}")
