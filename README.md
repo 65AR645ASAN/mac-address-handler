@@ -1,5 +1,5 @@
 # MAC-ADDRESS API-HANDLER 
-- Importent Note - The Requirements.txt File is a sample, its presence is semantic and extensible if external libraries need to be leveraged in the future
+- Importent Note - The Requirements.txt File is a sample, its presence is semantic and extensible if external libraries if they need to be leveraged in the future
 - Install python3 on your computer from python.org {https://www.python.org/downloads/}
 - Install docker on your computer from {https://www.docker.com/products/docker-desktop/}
 - Run the following commands to execute the main.py script
