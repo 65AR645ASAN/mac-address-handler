@@ -5,7 +5,7 @@
     - Install docker on your computer from {https://www.docker.com/products/docker-desktop/}
     - Website that the api is listed is {https://macaddress.io/api/documentation/making-requests}
     - The API key is valid for 30 days from 10/11/2023
-    - Run the following commands to execute the main.py program
+    - Run the following command to execute the main.py program
         - It can be run directly using the following command
         - python3 main.py [macaddress]
         > python3 main.py 44:38:39:ff:ef:57
