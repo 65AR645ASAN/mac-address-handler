@@ -11,7 +11,10 @@ ssl._create_default_https_context = ssl._create_unverified_context
 payload = ''
 headers = {}
 mac_address = sys.argv[1]
-apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW' # retrieve the API key from the maclookup website provided for email adi.sandhu@outlook.com
+apiKey = 'at_Mco4shjRDxlrBdMY2TQXNLBqjlEWW' 
+# retrieve the API key from the 
+# maclookup website [URL Provided in README.MD File] 
+# generated for email adi.sandhu@outlook.com
 
 
 class macapi():
@@ -26,8 +29,8 @@ class macapi():
         res = baseurl.getresponse()
         data = res.read()
         dict_resp = json.loads(data.decode("utf-8"))
-        return logging.critical(f"CompanyName -> {dict_resp['vendorDetails']['companyName']}")
-
+        logging.critical(f'dict_resp -> {dict_resp}')
+        return logging.critical(f"CompanyName -> {dict_resp['vendorDetails']['companyName']}") # requested company name
 # instantiate class and func to return company name
 macapi_class = macapi(mac_address, apiKey)
 instantiate_func = macapi_class.macaddress_api(mac_address, apiKey)
